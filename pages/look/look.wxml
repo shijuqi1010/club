@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="look-container">
+    <text class="title">星球大战</text>
+    <view class="look-des">     
+      <view class="vs-des" bindtap="bindViewTap">
+        <view class="userinfo">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <text class="motto">给我阳光我就灿烂</text>
+        </view>
+        <image class="vs-ball" src="/images/vs-ball.png" mode="cover"></image>
+        <view class="userinfo">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">大神</text>
+          <text class="motto">你赢我就请你吃KFC</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="info">
+    <view class="time"> 开始时间：1月20日 16:00 </view>
+    <view class="location"> 地点：体育中心 </view>
+  </view>
+
+  <view class="info">
+    <view class="result" wx:if="isStart"> 
+      比赛即将开始 
+      <view class="combat-ball">
+        <image class="ball" src="/images/ball.gif" mode="cover"></image>
+        <text class="come-on">仙人掌🌵油瓶：20L</text>
+        <image class="ball" src="/images/support.png" mode="cover"></image>
+      </view>
+      <view class="combat-ball">
+        <image class="ball" src="/images/ball.gif" mode="cover"></image>
+        <text class="come-on">大神油瓶：10L</text>
+        <image class="ball" src="/images/support-o.png" mode="cover"></image>
+      </view>
+    </view>
+    <view class="result" wx:else> 比赛已经结束 
+      <view class="win">
+        仙人掌🌵胜
+      </view>
+      <view class="win">
+        30:20
+      </view>
+    </view>
+  </view>
+
+</view>

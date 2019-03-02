@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/record/record",
+    "pages/look/look",
+    "pages/face/face",
+    "pages/detail/detail",
+    "pages/greet/greet",
+    "pages/win/win",
+    "pages/lose/lose",
+    "pages/club/club",
+    "pages/combat/combat",
+    "pages/game/game",
+    "pages/history/history",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTitleText": "互爆俱乐部",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#d25501",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home-o.png",
+        "selectedIconPath": "images/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/club/club",
+        "iconPath": "images/club-o.png",
+        "selectedIconPath": "images/club.png",
+        "text": "俱乐部"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "iconPath": "images/record-o.png",
+        "selectedIconPath": "images/record.png",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

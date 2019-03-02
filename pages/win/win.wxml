@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+      <view class="info">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="des">互爆宣言: {{motto}}</text>
+      </view>
+
+    </block>
+  </view>
+
+  <view class="combat-info">
+    <view class="record">
+      <text class="title">我赢得的</text>
+      <view class="des-special" wx:for="{{groupList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+        <view class="list">
+          <text class="time"> {{item.time}} </text>
+          <text class="location"> {{item.location}} </text>
+          <text class="combat"> 对战 {{item.aggainst}} </text>
+          <view class="praise-container">
+            <image class="praise" src="/images/prise.png"></image>
+            <span class="praise-number">100</span>
+          </view>
+        </view>
+        <view class="content-bottom">
+          <view class="content" bindtap="commit">评论</view>
+          <view wx:for="{{commitList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+            <text class="report name" >{{item.name}}: </text>
+            <text class="report" >{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

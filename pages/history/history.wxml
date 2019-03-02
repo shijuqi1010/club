@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+      <view class="info">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="des">互爆宣言: {{motto}}</text>
+      </view>
+
+    </block>
+  </view>
+
+  <view class="combat-info">
+    <view class="record">
+      <text class="title">发起的</text>
+      <view class="des-special">
+        <view class="list" wx:for="{{combatList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+          <navigator url="{{item.url}}">
+            <text class="time"> {{item.time}} </text>
+            <text class="location"> {{item.location}} </text>
+            <text class="combat"> 对战{{item.aggainst}} </text>
+            <text class="state-o" wx:if="{{item.state}}"> 赛事已结束 </text>
+            <text class="state" wx:else> 赛事即将开始 </text>
+          </navigator>
+        </view> 
+      </view>
+    </view>
+
+    <view class="record">
+      <text class="title">应战的</text>
+      <view class="des-special">
+        <view class="list" wx:for="{{greetList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+          <navigator url="{{item.url}}">
+            <text class="time"> {{item.time}} </text>
+            <text class="location"> {{item.location}} </text>
+            <text class="combat"> 对战{{item.aggainst}} </text>
+            <text class="state-o" wx:if="{{item.state}}"> 赛事已结束 </text>
+            <text class="state" wx:else> 赛事即将开始 </text>
+          </navigator>
+        </view> 
+      </view>
+    </view>
+
+    <view class="record">
+      <text class="title">胜利记录</text>
+      <view class="des-special">
+        <view class="list">
+          <text class="location"> {{win}}场 </text>
+          <text class="state"> 获胜率 74% </text>
+        </view>
+      </view>
+    </view>
+
+    <view class="record">
+      <text class="title">败北记录</text>
+      <view class="des-special">
+        <view class="list">
+          <text class="location"> {{lost}}场 </text>
+          <text class="state"> 败北率 26% </text>
+        </view>
+      </view>
+    </view>
+
+    <!-- <button class="btn" bindtap='bindCombat'>约战</button> -->
+  </view>
+</view>

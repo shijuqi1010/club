@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index-container">
+    <text class="title">最新战况</text>
+    <view>
+      <block wx:if="{{!hasGame}}" >
+        <text class="explain">暂无赛事,你可以发起开战...</text>
+        <image class="paly" src="/images/vs.jpg" mode="cover"></image>
+      </block>
+      
+      <block wx:else>
+        <view class="index">
+          <view class= "ball-container" wx:for="{{ballList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+            <view class= "animation" bindtap="bindLookTap">
+              <view class="userinfo">
+                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+              </view>
+              <image class="vs-ball" src="{{item.src}}" mode="cover"></image>
+              <view class="userinfo">
+                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    
+  </view>
+
+  <view class="index-container">
+    <text class="title">PK me</text>
+    <view>
+      <block wx:if="{{!hasGame}}" >
+        <text class="explain">暂无赛事,你可以发起开战...</text>
+        <image class="paly" src="/images/vs.jpg" mode="cover"></image>
+      </block>
+      
+      <block wx:else>
+        <view class="index">
+          <view class= "ball-container" wx:for="{{vsList}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+            <view class= "animation" bindtap="bindFaceTap">
+              <view class="userinfo">
+                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+              </view>
+              <image class="vs-ball" src="{{item.src}}" mode="cover"></image>
+              <view class="userinfo">
+                <image class="userinfo-avatar" src="/images/question.png" mode="cover"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    
+  </view>
+
+  <navigator url="/pages/combat/combat">
+    <view class="combat-ball">
+      <image class="ball" src="/images/ball.gif" mode="cover"></image>
+      <text class="combat-text">发起比赛</text>
+      <!-- <image class="ball" src="/images/ball.png" mode="cover"></image> -->
+    </view>
+  </navigator>
+</view>

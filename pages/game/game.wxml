@@ -1,0 +1,10 @@
+<!--logs.wxml-->
+<view class="container game">
+  <view class="game">
+    <image class="vs-paly" src="/images/vs.jpg" mode="cover"></image>
+    <image class="vs-paly" src="/images/vs.jpg" mode="cover"></image>
+    <image class="vs-paly" src="/images/vs.jpg" mode="cover"></image>
+    <image class="vs-paly" src="/images/vs.jpg" mode="cover"></image>
+    <image class="vs-paly" src="/images/vs.jpg" mode="cover"></image>
+  </view>
+</view>

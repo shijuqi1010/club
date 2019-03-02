@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="look-container">
+    <text class="title">星球大战</text>
+    <view class="look-des">     
+      <view class="vs-des" bindtap="bindViewTap">
+        <view class="userinfo">
+          <image class="vs-ball" src="/images/vs-ball.png" mode="cover"></image>
+          <text>发起人：</text>
+        </view>
+        <view class="userinfo">
+          <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+          <text class="motto">给我阳光我就灿烂</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="info">
+    <view class="time"> 时间：1月26日 18:00 </view>
+    <view class="location"> 地点：广州塔 </view>
+  </view>
+
+  <view class="info">
+    <view class="result"> 
+      发起人信息
+      <view class="location"> 技能：满分💯 </view>
+      <view class="time"> 互爆：100场 </view>
+      <view class="location"> 支持率：120% </view>
+      <view class="time"> 放鸽子次数：0次 </view>
+      <view class="location"> 观战：88次 </view>
+      <view class="location"> 约战：66次 </view>
+    </view>
+    <view class="btn" bindtap="bindCombatTap">
+      迎战
+    </view>
+    <!-- <view class="btn" bindtap="bindCombatTap">
+      高攀不起
+    </view> -->
+  </view>
+
+</view>

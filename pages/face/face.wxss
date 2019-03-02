@@ -1,0 +1,121 @@
+/**index.wxss**/
+.look-container{
+  margin: 20rpx;
+}
+
+.look-des{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  text-align: left;
+}
+
+.vs-des{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin: 20px;
+}
+
+.title{
+  color: rgba(210, 85, 1, 0.945);
+}
+
+.vs-ball{
+  margin: 30px;
+}
+
+.motto{
+  color: #2c2c2ca6;
+  font-size: 14px;
+}
+
+.paly{
+  height: 330rpx;
+}
+
+.ball-container{
+  margin: 20rpx;
+  display: inline-block;
+}
+
+.userinfo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+} 
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  font-size: 14px;
+}
+
+.vs-ball{
+  /* position: absolute; */
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx;
+  /* border-radius: 50%; */
+}
+
+.combat-ball{
+  display: flex;
+  align-items: center;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  /* margin-top: 10px; */
+  justify-content: space-between;
+}
+
+.btn{
+  align-items: center;
+  background-color: #d25501f1;
+  width: 200rpx;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 100rpx;
+  float: right;
+}
+
+.ball{
+  width: 65rpx;
+  height: 65rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 100px;
+}
+
+.info{
+  margin: 20rpx;
+}
+
+.time, .location{
+  font-size: 16px;
+  text-align: center;
+}
+
+.result{
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.win{
+  color: rgba(210, 85, 1, 1);
+  margin-top: 10rpx;
+  font-size: 40px;
+}

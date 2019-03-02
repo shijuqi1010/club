@@ -1,0 +1,24 @@
+<!--club.wxml-->
+<view class="container">
+  <view class="member">俱乐部成员</view>
+  <view class="menu-block" wx:for="{{groupons}}" wx:for-index="index" wx:for-item="item" wx:key="id">
+    <navigator class="record" url="{{item.url}}">
+      <view class="list">
+        <view class="userinfo">
+          <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+
+            <view class="info">
+              <text class="userinfo-nickname">{{item.nickName}}</text>
+              <text class="des">互爆宣言: {{item.motto}}</text>
+            </view>
+
+          </block>
+        </view>
+        <image src="/images/fire.png" class="fire"></image>
+      </view>
+    </navigator>
+  </view>
+
+</view>

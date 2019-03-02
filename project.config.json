@@ -1,0 +1,112 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx412e2d401894de70",
+	"projectname": "club",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 11,
+			"list": [
+				{
+					"id": -1,
+					"name": "record",
+					"pathName": "pages/record/record",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "history",
+					"pathName": "pages/history/history",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "club",
+					"pathName": "pages/club/club",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "combat",
+					"pathName": "pages/combat/combat",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "detail",
+					"pathName": "pages/detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "look",
+					"pathName": "pages/look/look",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "face",
+					"pathName": "pages/face/face",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "game",
+					"pathName": "pages/game/game",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "history",
+					"pathName": "pages/history/history",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "greet",
+					"pathName": "pages/greet/greet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "win",
+					"pathName": "pages/win/win",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lose",
+					"pathName": "pages/lose/lose"
+				}
+			]
+		}
+	}
+}

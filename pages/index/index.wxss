@@ -1,0 +1,125 @@
+/**index.wxss**/
+.index-container{
+  margin: 20rpx;
+}
+
+.index{
+  border: 1rpx solid rgba(210, 85, 1, 0.6);
+  height: 400rpx;
+}
+
+.title{
+  color: rgba(210, 85, 1, 0.945);
+}
+
+.explain{
+  color: #2c2c2ca6;
+  font-size: 14px;
+}
+.paly{
+  height: 330rpx;
+}
+
+.ball-container{
+  margin: 20rpx;
+  display: inline-block;
+}
+
+.userinfo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+} 
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  font-size: 14px;
+}
+
+.vs-ball{
+  /* position: absolute; */
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx;
+  /* border-radius: 50%; */
+}
+
+.combat-ball{
+  display: flex;
+  align-items: center;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  /* margin-top: 10px; */
+  justify-content: space-between;
+}
+
+.combat-text{
+  align-items: center;
+  background-color: rgba(210, 85, 1, 0.945);
+  line-height: 40px;
+  width: 120px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.ball{
+  width: 65rpx;
+  height: 65rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 100px;
+}
+
+.animation {
+  position: relative;
+  animation-duration:3s; /*动画时间*/
+  animation-fill-mode: both; /*播放后的状态*/
+  animation-name: bubble;
+  animation-direction: alternate;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite; /*动作循环的次数：infinite 无限循环*/
+  transform-origin: center bottom; /*设置动画旋转元素的基点为：居中靠下*/
+  cursor: pointer;
+}
+
+.bubble {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  background: greenyellow;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+@keyframes bubble {
+  from {
+    left: 0;
+    top: 0;
+  } to {
+    left: 0px;
+    top: 30px;
+  }
+}
+@-webkit-keyframes bubble {
+  from {
+    left: 0;
+    top: 0;
+  } to {
+    left: 30px;
+    top: 30px;
+  }
+}

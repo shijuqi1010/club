@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="combat-info">
+    <view class="motto des">互爆宣言：
+      <input class="motto" bindinput="bindKeyInput" placeholder="请输入互爆宣言"/>
+    </view>
+
+    <view class="motto des">赛事名称：
+      <input class="motto" bindinput="bindKeyInput" placeholder="请输入赛事名称"/>
+    </view>
+
+    <view class="time des">约战时间：
+      <input class="time" bindinput="bindKeyInput" placeholder="请输入约战时间"/>
+    </view>
+
+    <view class="location des">约战地点：
+      <input class="location" bindinput="bindKeyInput" placeholder="请输入约战地点"/>
+    </view>
+
+    <button class="btn" bindtap='bindCombat'>约战</button>
+  </view>
+</view>

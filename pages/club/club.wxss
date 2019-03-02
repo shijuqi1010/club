@@ -1,0 +1,84 @@
+/**club.wxss**/
+.member{
+  margin: 20rpx;
+  background: #e35e00;
+  width: 28%;
+  padding: 20rpx;
+  line-height: 32rpx;
+}
+
+.userinfo {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  text-align: left;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(19, 17, 17);
+  /* margin: 20rpx; */
+}
+
+.info{
+  line-height: 30px;
+}
+
+.des {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+  /* margin-top: 10rpx; */
+  font-size: 14px;
+  color: #e35e00;
+}
+
+.menu-block{
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-size: 16px;
+  list-style: none;
+  margin-top: 20rpx;
+}
+
+.record {
+  margin: 0 20px;
+  position: relative;
+}
+
+.list {
+  /* width: 100%; */
+  /* height: 56px; */
+  line-height: 60px;
+  border-bottom: 1rpx solid rgba(210, 85, 1, 0.2);
+}
+
+span {
+  text-align: middle;
+}
+
+.fire {
+  vertical-align: middle;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.btn {
+  margin-top: 160rpx;
+  width: 400rpx;
+  line-height: 80rpx;
+  background: #d25501;
+  border-radius: 20px;
+}

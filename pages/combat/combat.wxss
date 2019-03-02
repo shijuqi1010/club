@@ -1,0 +1,39 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  text-align: left;
+}
+
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  margin: 20rpx;
+}
+
+.combat-info {
+  margin: 0 20px;
+  align-items: left;
+  text-align: left;
+}
+
+.des {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  color: #e35e00;
+}
+
+.btn{
+  margin-top: 60rpx;
+  width: 300rpx;
+  background-color: #e35e00;
+  border-radius: 20px;
+}
